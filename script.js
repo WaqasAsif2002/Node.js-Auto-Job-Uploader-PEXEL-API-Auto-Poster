@@ -11,8 +11,8 @@ const JOB_API = "Your_Create_API_Where_you_create";
 const PEXELS_API_KEY = "PEXEL_API";
 
 const CATEGORY_ID = "CATEGORY_ID_LIKE_PLUMBER_ID";
-const TOTAL = 300;   // jitna chaho badha do
-const DELAY = 5000;  // 2 second delay (server overload nahi hoga)
+const TOTAL = 300;   // INCREASE IF YOU CAN
+const DELAY = 5000;  // 2 second delay (FOR SERVER TIME)
 
 // Random data
 const addresses = [
@@ -166,4 +166,5 @@ async function runAll() {
 }
 
 runAll();
+
 
