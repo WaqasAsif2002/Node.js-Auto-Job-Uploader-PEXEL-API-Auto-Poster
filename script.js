@@ -6,11 +6,11 @@ import fs from "fs-extra";
 // ======================
 // SETTINGS
 // ======================
-const LOGIN_API = "http://13.60.208.3:8000/api/auth/login";
-const JOB_API = "http://13.60.208.3:8000/api/jobs/create";
-const PEXELS_API_KEY = "RMbROS2z7d8pkOm7LY4izMmLSaOX38h8k7FgMU2fozCozr1iH8nSOvzB";
+const LOGIN_API = "Ypur_login_Endpoint";
+const JOB_API = "Your_Create_API_Where_you_create";
+const PEXELS_API_KEY = "PEXEL_API";
 
-const CATEGORY_ID = "159cf934-5344-405b-a8dd-96927229ca79";
+const CATEGORY_ID = "CATEGORY_ID_LIKE_PLUMBER_ID";
 const TOTAL = 300;   // jitna chaho badha do
 const DELAY = 5000;  // 2 second delay (server overload nahi hoga)
 
@@ -45,8 +45,8 @@ async function login() {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      phone_number: "+9212345678",
-      password: "12345678"
+      phone_number: "LOGIN_EMAIL",
+      password: "LOGIN_PASSWORD"
     })
   });
 
@@ -166,3 +166,4 @@ async function runAll() {
 }
 
 runAll();
+
