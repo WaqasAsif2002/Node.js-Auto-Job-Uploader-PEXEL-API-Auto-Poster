@@ -159,12 +159,13 @@ async function runAll() {
     console.log(`▶ Job ${i + 1}/${TOTAL}`);
 
     await processJob(token);
-    await sleep(DELAY);  // IMPORTANT: Server overload nahi hoga
+    await sleep(DELAY);  // IMPORTANT: Server did not overloaded
   }
 
   console.log("🎉 All jobs completed");
 }
 
 runAll();
+
 
 
